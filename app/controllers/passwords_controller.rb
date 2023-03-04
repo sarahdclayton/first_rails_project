@@ -9,7 +9,7 @@ class PasswordsController < ApplicationController
             redirect_to root_path, notice: "Password Updated!"
         else
             render :edit
-        end
+        end 
     end
 
     private

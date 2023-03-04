@@ -17,5 +17,12 @@ Rails.application.routes.draw do
   # sign_in submission
   post 'sign_in', to: "sessions#create"
 
+  # password reset
+  get "password_reset", to: "password_resets#new"
+  post "password_reset", to: "password_reset#create"
+  get "password_reset_edit", to: "password_resets#new"
+  patch "password_reset_edit", to: "password_reset#update"
+
+
   
 end
