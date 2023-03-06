@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get "password_reset_edit", to: "password_resets#new"
   patch "password_reset_edit", to: "password_reset#update"
 
-
+  resources :blogs 
   
 end
+
