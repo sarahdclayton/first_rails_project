@@ -1,8 +1,15 @@
 <h1>Thoughts</h1>
 <% @blogs.each do |blog| %>
-    <h2><%= blog.title %></h2>
-    <p>Content: <%= blog.content %></p>
+<div class="card card-body" style="width: 18rem;">
+    <div class="card-title"> 
+    <h2 ><%= blog.title %></h2>
+    </div>
+    <p class="card-text">Content: <%= blog.content %></p>
     <div>
         <%= link_to "edit", edit_blog_path(blog) %>
+
+        <%= button_to "Edit", edit_blog_path(blog), class: "btn btn-pirmary", method: :get %>
     </div>
+</div>
 <% end %> 
+

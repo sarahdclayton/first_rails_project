@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'Expo_2';
+    src: url('/app/assets/fonts/Exo_2/')
+}
+
+@font-face {
+    font-family: "Alegreya_Sans";
+    src: url('/app/assets/fonts/Alegreya_Sans/')
+}
+
 .title {
-    color: blue;
+    font-family: 'Expo_2', sans-serif;
+}
+
+h2 {
+    font-family: "Expo_2";
+}
+
+p {
+    font-family: 'Alegreya_Sans'
+}
+
+.card-title {
+    background-color:  #c0c0c0;
+
 }
